@@ -13,6 +13,10 @@
 		15D1CC5226149ED1000B31F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D1CC5126149ED1000B31F8 /* Assets.xcassets */; };
 		15D1CC5526149ED1000B31F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15D1CC5426149ED1000B31F8 /* Preview Assets.xcassets */; };
 		15D1CC5826149ED1000B31F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15D1CC5626149ED1000B31F8 /* LaunchScreen.storyboard */; };
+		15D1CC6526149F15000B31F8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1CC6426149F15000B31F8 /* DetailView.swift */; };
+		15D1CC6926149F2A000B31F8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1CC6826149F2A000B31F8 /* NetworkManager.swift */; };
+		15D1CC6C26149F34000B31F8 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1CC6B26149F34000B31F8 /* PostData.swift */; };
+		15D1CC6F2614A86B000B31F8 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D1CC6E2614A86B000B31F8 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		15D1CC5426149ED1000B31F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		15D1CC5726149ED1000B31F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15D1CC5926149ED1000B31F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15D1CC6426149F15000B31F8 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		15D1CC6826149F2A000B31F8 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		15D1CC6B26149F34000B31F8 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		15D1CC6E2614A86B000B31F8 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		15D1CC4A26149ED0000B31F8 /* H4XOR News demo */ = {
 			isa = PBXGroup;
 			children = (
+				15D1CC6226149EF0000B31F8 /* Views */,
+				15D1CC6026149EDE000B31F8 /* Models */,
 				15D1CC4B26149ED0000B31F8 /* AppDelegate.swift */,
 				15D1CC4D26149ED0000B31F8 /* SceneDelegate.swift */,
-				15D1CC4F26149ED0000B31F8 /* ContentView.swift */,
 				15D1CC5126149ED1000B31F8 /* Assets.xcassets */,
 				15D1CC5626149ED1000B31F8 /* LaunchScreen.storyboard */,
 				15D1CC5926149ED1000B31F8 /* Info.plist */,
@@ -73,6 +82,25 @@
 				15D1CC5426149ED1000B31F8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		15D1CC6026149EDE000B31F8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15D1CC6826149F2A000B31F8 /* NetworkManager.swift */,
+				15D1CC6B26149F34000B31F8 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		15D1CC6226149EF0000B31F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				15D1CC4F26149ED0000B31F8 /* ContentView.swift */,
+				15D1CC6426149F15000B31F8 /* DetailView.swift */,
+				15D1CC6E2614A86B000B31F8 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,8 +174,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				15D1CC4C26149ED0000B31F8 /* AppDelegate.swift in Sources */,
+				15D1CC6C26149F34000B31F8 /* PostData.swift in Sources */,
+				15D1CC6526149F15000B31F8 /* DetailView.swift in Sources */,
+				15D1CC6926149F2A000B31F8 /* NetworkManager.swift in Sources */,
 				15D1CC4E26149ED0000B31F8 /* SceneDelegate.swift in Sources */,
 				15D1CC5026149ED0000B31F8 /* ContentView.swift in Sources */,
+				15D1CC6F2614A86B000B31F8 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
